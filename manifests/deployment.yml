@@ -13,8 +13,8 @@ spec:
         app: web
     spec:
       containers:
-        - name: web
-          image: tailspinspacegameprod.azurecr.io/web
+        - name: webk8s
+          image: crtailspinspacegame2698.azurecr.io/webk8s
           ports:
           - containerPort: 80
 ---
@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
         - name: leaderboard
-          image: tailspinspacegameprod.azurecr.io/leaderboard
+          image: crtailspinspacegame2698.azurecr.io/leaderboard
           ports:
           - containerPort: 80
