@@ -2,7 +2,7 @@ trigger: none
 
 variables:
   buildConfiguration: 'Release'
-  webRepository: 'web'
+  webRepository: 'webk8s'
   tag: '$(Build.BuildId)'
 
 stages:
@@ -34,7 +34,7 @@ stages:
     pool:
       vmImage: 'ubuntu-20.04'
     variables:
-    - group: Release
+    - group: ReleaseKubernetes
     steps:
     - task: AzureWebAppContainer@1
       inputs:
